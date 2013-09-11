@@ -31,7 +31,7 @@ To return the button to its normal state:
 	// Example Trigger Normal
 	$('tabs--tab').trigger('normal');
 
-It is also possible to set configuration on one element while control of the state happens on another.  Useful to reduce redundant configurations or set a class on a parent when a child is clicked.
+It is also possible to set configuration on one element while control of the state happens on another.  Useful to reduce repetative configurations or to set a class on a parent when a child is clicked.
 
 	// Example delegation
 	<button data-states="delegate: #parentid">Button</button>
@@ -48,10 +48,10 @@ To create new states or alter defaults, pass in an object using this format:
 
 	{
 		states: {
-			"stateName": "class names"
+			stateName: "class names"
 		},
-		"stateName": {
-			"events": ["defaultEventName"]
+		stateName: {
+			events: ["defaultEventName"]
 		}
 	}
 
